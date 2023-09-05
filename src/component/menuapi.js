@@ -1,10 +1,10 @@
 const Menu = [
   // {
   //   id: 1,
-  //   image: "https://th.bing.com/th/id/OIP.iSu2RcCcdm78xbxNDJMJSgHaEo?w=271&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+  //   image: "images/corn.jpg",
   //   video: "https://youtu.be/d2cRXDtXpr8?t=8",
   //   name: "maggi",
-  //   category: "web",
+  //   category: "evening",
   //   price: "12₹",
   //   description:
   //     "I love Maggi realy oo yues  Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
@@ -14,7 +14,7 @@ const Menu = [
   //   id: 2,
   //   image: "images/allupakoida.jpg",
   //   name: "allu pakoida",
-  //   category: "web",
+  //   category: "evening",
   //   price: "20₹",
   //   description:
   //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
@@ -82,30 +82,29 @@ const Menu = [
   //   description:
   //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
   // },
+
   {
-    "id": "thapaserialnoa",
-    "name": "iphone x",
-    "company": "apple",
-    "price": 6000000,
-    "colors": ["#ff0000", "#000000", "#CDD0D0"],
-    "image": "https://images.pexels.com/photos/1275229/pexels-photo-1275229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "description": "The mobile is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
-    "category": "mobile",
-    "featured": true
+    "id": "1",
+    "name": "Iphone",
+    "company": "Apple",
+    "price": 600000,
+    "colors": ["#22D3EF", "#CDD0D0"],
+    "image": "https://imgs.search.brave.com/guXu1tPIpMYWqlfDbbfaLokqtUoQM3JD2N3AzN4omDs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9mZG4y/LmdzbWFyZW5hLmNv/bS92di9iaWdwaWMv/YXBwbGUtaXBob25l/LTEyLmpwZw",
+    "description": "The Laptop is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "mobile"
   },
   {
-    "id": "thapaserialnob",
-    "name": "samsung s20",
-    "company": "samsung",
-    "price": 5000000,
-    "colors": ["#000", "#22D3EF"],
-    "image": "https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "description": "The mobile is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
-    "category": "mobile",
-    "shipping": true
+    "id": "2",
+    "name": "Google pixel 7 pro",
+    "company": "Google",
+    "price": 600000,
+    "colors": ["#22D3EF", "#CDD0D0"],
+    "image": "https://imgs.search.brave.com/BLuefEqmd6vgll_hXQUq9AHaGvjpCvmJWRqDtnbFmko/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9mZG4y/LmdzbWFyZW5hLmNv/bS92di9iaWdwaWMv/Z29vZ2xlLXBpeGVs/Ny1wcm8tbmV3Lmpw/Zw",
+    "description": "The Laptop is compact with its 6.2-inch OLED screen and far lighter at 168g. It perfectly captures the design, looks, and feel of the expensive one. It comes with a snapdragon processor with a 5n chip in it. It has a 200mp camera in the rear 100mp in front perfect for selfie lovers. It also support HDR content means you can watch 4K content on it.",
+    "category": "mobile"
   },
   {
-    "id": "thapaserialnoc",
+    "id": "3",
     "name": "Dell Series",
     "company": "dell",
     "price": 600000,
@@ -115,7 +114,7 @@ const Menu = [
     "category": "laptop"
   },
   {
-    "id": "thapaserialnod",
+    "id": "4",
     "name": "Nokia 420",
     "company": "nokia",
     "price": 12599,
@@ -126,7 +125,7 @@ const Menu = [
     "shipping": true
   },
   {
-    "id": "thapaserialnoe",
+    "id": "5",
     "name": "Mac Pc",
     "company": "apple",
     "price": 4000099,
@@ -137,7 +136,7 @@ const Menu = [
     "shipping": true
   },
   {
-    "id": "thapaserialnof",
+    "id": "6",
     "name": "Macbook Pro",
     "company": "apple",
     "price": 42999,
@@ -148,7 +147,7 @@ const Menu = [
     "shipping": true
   },
   {
-    "id": "thapaserialnog",
+    "id": "7",
     "name": "Asus gseries",
     "company": "asus",
     "price": 23999,
@@ -159,7 +158,7 @@ const Menu = [
     "shipping": true
   },
   {
-    "id": "thapaserialnoh",
+    "id": "8",
     "name": "Accessories",
     "price": 1099999,
     "company": "lenova",
@@ -171,7 +170,7 @@ const Menu = [
     "shipping": true
   },
   {
-    "id": "thapaserialnoi",
+    "id": "9",
     "name": "Iwatch",
     "price": 39999,
     "company": "apple",
@@ -182,7 +181,7 @@ const Menu = [
     "shipping": true
   },
   {
-    "id": "thapaserialnoj",
+    "id": "10",
     "name": "user need",
     "company": "apple",
     "price": 300099,
@@ -192,7 +191,7 @@ const Menu = [
     "category": "accessories"
   },
   {
-    "id": "thapaserialnok",
+    "id": "11",
     "name": "rolex premium",
     "company": "rolex",
     "price": 999999,
@@ -202,7 +201,7 @@ const Menu = [
     "category": "watch"
   },
   {
-    "id": "thapaserialnol",
+    "id": "12",
     "name": "galaxy w20",
     "price": 311999,
     "company": "samsung",

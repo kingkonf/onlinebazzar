@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const Menucart = ({menudata}) => {
     const mystyle ={color: "red"};
@@ -22,7 +23,7 @@ const Menucart = ({menudata}) => {
           </div>
           <img src={element.image} alt="images" className='card-media'/>
           {/* <video src={element.video} alt="vedio" className="card_medio"/> */}
-          <span className='card-tag subtle'>Order Now</span>
+          <Link className='card-tag subtle' aria-current="page" to={`/Details/${element.id}`}>Order Now</Link>
         </div>
       </div>
 

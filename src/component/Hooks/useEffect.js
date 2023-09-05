@@ -6,7 +6,7 @@ const UseEffect = () => {
   const [myNum, setMyNum] = useState(0);
 
   useEffect(() => {
-    document.title = `Chats(${myNum})`;
+    document.title = `(${myNum})`;
   });
 
   return (

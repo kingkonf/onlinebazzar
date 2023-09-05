@@ -18,9 +18,9 @@ const Restaurant = () => {
     <div className="navbar">
       <div className="btn-group">
         {/* <button className='btn-group__item' onClick={ ()=> filterItem("web")}>breakfast</button> */}
-        <a href="/" onClick={()=>filterItem("Mobile")}>breakfast</a>
-        <button className='btn-group__item'  onClick={ ()=> filterItem("watch")}>lunch</button>
-        <button className='btn-group__item'  onClick={ ()=> filterItem("evening")}>evening</button>
+        <button className='btn-group__item' onClick={()=>filterItem("mobile")}>Mobile</button>
+        <button className='btn-group__item'  onClick={ ()=> filterItem("watch")}>Watch</button>
+        <button className='btn-group__item'  onClick={ ()=> filterItem("laptop")}>laptop</button>
         <button className='btn-group__item'  onClick={ ()=> setMenuData(Menu)}>all</button>
       </div>
     </div>
