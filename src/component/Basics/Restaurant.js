@@ -15,12 +15,14 @@ const Restaurant = () => {
 
   return (
     <>
-    <div className="navbar">
+    <div className="navbarrr">
       <div className="btn-group">
         {/* <button className='btn-group__item' onClick={ ()=> filterItem("web")}>breakfast</button> */}
-        <button className='btn-group__item' onClick={()=>filterItem("mobile")}>Mobile</button>
-        <button className='btn-group__item'  onClick={ ()=> filterItem("watch")}>Watch</button>
-        <button className='btn-group__item'  onClick={ ()=> filterItem("laptop")}>laptop</button>
+        <button className='btn-group__item' onClick={()=>filterItem("home-decoration")}>home-decoration</button>
+        <button className='btn-group__item'  onClick={ ()=> filterItem("fragrances")}>fragrances</button>
+        <button className='btn-group__item'  onClick={ ()=> filterItem("Groceries")}>Groceries</button>
+        <button className='btn-group__item'  onClick={ ()=> filterItem("smartphones")}>smartphones</button>
+        <button className='btn-group__item'  onClick={ ()=> filterItem("laptops")}>laptops</button>
         <button className='btn-group__item'  onClick={ ()=> setMenuData(Menu)}>all</button>
       </div>
     </div>

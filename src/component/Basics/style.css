@@ -6,7 +6,7 @@
   }
   
   html {
-    background: #faf7f2;
+  
     background-image: url(https://s3.postimg.org/s1n3ji1ur/paper_fibers_2_X.png);
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
@@ -156,12 +156,13 @@
   
   /* ---------- Button styles ------------------ */
   
-  .navbar {
+  .navbarrr {
     padding-top: 50px;
     text-align: center;
+    justify-content: center;
   }
   
-  .navbar h1 {
+  .navbarrr h1 {
     padding-bottom: 20px;
     text-transform: capitalize;
   }

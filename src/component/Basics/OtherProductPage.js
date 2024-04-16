@@ -1,18 +1,33 @@
-import React from 'react'
+// OtherProductsPage.js
+import React from 'react';
+import { useParams } from 'react-router-dom';
+
 import { Link } from 'react-router-dom';
+import Menu from '../menuapi'; // Importing Menu assuming it's correctly defined
 
-const Menucart = ({menudata}) => {
+const OtherProductsPage = ({ category }) => {
+    // Filter other products with the same category
+    const { id } = useParams(); // Ensure id is a string
     const mystyle ={color: "red"};
-    // console.log({menudata});
 
+
+    // Convert id to a number, since Menu.id is a number
+    const productId = parseInt(id);
+    const element = Menu.find((p) => p.id === productId);
+
+    if (!element) {
+        return <div>Product not found</div>;
+    }
+
+    const otherProducts = Menu.filter((product) => product.category === category);
     const handleGoToDetails = (productId) => {
-      window.location.href = `/Details/${productId}`;
-  };
-  return (
-   <>
-   <section className="main-card--cointainer">
+        window.location.href = `/Details/${productId}`;
+    };
+
+    return (
+          <section className="main-card--cointainer">
     
-  {menudata.map((element)=>{
+  {otherProducts.map((element)=>{
     return (
       <div className="card-container" key={element.id}>
     <div className="card">
@@ -34,6 +49,7 @@ const Menucart = ({menudata}) => {
         <button className='card-tag subtle' onClick={() => handleGoToDetails(element.id)}>
                             Order Now
                         </button>
+
     </div>
 </div>
 )
@@ -41,9 +57,7 @@ const Menucart = ({menudata}) => {
   })}
 
    </section>
- 
-   </>
-  )
-}
+    );
+};
 
-export default Menucart
+export default OtherProductsPage;

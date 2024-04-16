@@ -3,9 +3,8 @@ import Restaurant from './component/Basics/Restaurant';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Showresult from './component/Basics/Showresult';
 import Details from './component/Basics/Details';
-// import UseState from './component/Hooks/useState';
-// import UseEffect from './component/Hooks/useEffect';
-// import UseReducer from './component/Hooks/useReduder';
+import OtherProductsPage from './component/Basics/OtherProductPage';
+
 
 const App = () => {  //  its also called a functional component
   return (
@@ -15,9 +14,11 @@ const App = () => {  //  its also called a functional component
       <Routes>
         <Route path="/Showresult" element={<Showresult/>}/>
         <Route path="/Details/:id" element={<Details/>} />
-        <Route path="/reactapp" element={<Restaurant/>}/>
+        <Route path="/" element={<Restaurant/>}/>
+        <Route path="/otherproducts/:category" component={OtherProductsPage} />
       </Routes>
     </Router>
+
     {/* <Restaurant/> */}
     {/* <UseState/> */}
     {/* <UseEffect/> */}
